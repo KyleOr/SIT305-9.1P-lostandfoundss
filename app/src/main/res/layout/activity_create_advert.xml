@@ -14,7 +14,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Post type:"
+            android:text="@string/Post_type"
             android:textSize="16sp"
             android:layout_marginBottom="8dp" />
 
@@ -29,14 +29,14 @@
                 android:id="@+id/radioLost"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lost"
+                android:text="@string/Lost"
                 android:checked="true" />
 
             <RadioButton
                 android:id="@+id/radioFound"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Found"
+                android:text="@string/Found"
                 android:layout_marginStart="24dp" />
         </RadioGroup>
 
@@ -45,7 +45,7 @@
             android:id="@+id/inputName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name"
+            android:hint="@string/Name_hint"
             android:inputType="textPersonName"
             android:layout_marginBottom="12dp" />
 
@@ -53,7 +53,7 @@
             android:id="@+id/inputPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Phone"
+            android:hint="@string/Phone_hint"
             android:inputType="phone"
             android:layout_marginBottom="12dp" />
 
@@ -61,7 +61,7 @@
             android:id="@+id/inputDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Description"
+            android:hint="@string/Description_hint"
             android:inputType="textMultiLine"
             android:minLines="3"
             android:layout_marginBottom="12dp" />
@@ -70,7 +70,7 @@
             android:id="@+id/inputDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Date"
+            android:hint="@string/Date_hint"
             android:inputType="date"
             android:layout_marginBottom="12dp" />
 
@@ -78,7 +78,7 @@
             android:id="@+id/inputLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Location"
+            android:hint="@string/Location_hint"
             android:inputType="text"
             android:layout_marginBottom="24dp" />
 
@@ -86,6 +86,6 @@
             android:id="@+id/btnSave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Save" />
+            android:text="@string/Save_button" />
     </LinearLayout>
 </ScrollView>

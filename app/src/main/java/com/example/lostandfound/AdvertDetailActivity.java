@@ -1,7 +1,6 @@
 package com.example.lostandfound;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -35,26 +34,22 @@ public class AdvertDetailActivity extends AppCompatActivity {
         advert = (AdvertModel) getIntent().getSerializableExtra("advert");
 
         if (advert != null) {
-            textType.setText("Type: " + advert.getType());
-            textName.setText("Name: " + advert.getName());
-            textPhone.setText("Phone: " + advert.getPhone());
-            textDescription.setText("Description: " + advert.getDescription());
-            textDate.setText("Date: " + advert.getDate());
-            textLocation.setText("Location: " + advert.getLocation());
+            textType.setText(getString(R.string.advert_type, advert.getType()));
+            textName.setText(getString(R.string.advert_name, advert.getName()));
+            textPhone.setText(getString(R.string.advert_phone, advert.getPhone()));
+            textDescription.setText(getString(R.string.advert_description, advert.getDescription()));
+            textDate.setText(getString(R.string.advert_date, advert.getDate()));
+            textLocation.setText(getString(R.string.advert_location, advert.getLocation()));
         }
 
-        // Remove button
-        btnRemove.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                boolean success = dbHelper.deleteAdvert(advert.getId());
-                if (success) {
-                    Toast.makeText(AdvertDetailActivity.this, "Advert removed", Toast.LENGTH_SHORT).show();
-                    finish();
-                } else {
-                    Toast.makeText(AdvertDetailActivity.this, "Failed to remove advert", Toast.LENGTH_SHORT).show();
-                }
-            }
+        btnRemove.setOnClickListener(v -> {
+            boolean success = dbHelper.deleteAdvert(advert.getId());
+            Toast.makeText(
+                    AdvertDetailActivity.this,
+                    success ? R.string.advert_removed : R.string.advert_remove_failed,
+                    Toast.LENGTH_SHORT
+            ).show();
+            if (success) finish();
         });
     }
 }

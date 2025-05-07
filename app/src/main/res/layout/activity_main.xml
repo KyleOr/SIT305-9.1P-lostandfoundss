@@ -12,12 +12,12 @@
         android:id="@+id/btnCreateAdvert"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create a new advert"
+        android:text="@string/Create_advert"
         android:layout_marginBottom="16dp" />
 
     <Button
         android:id="@+id/btnShowAllItems"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show all Lost and Found items" />
+        android:text="@string/Show_lost_and_found_button" />
 </LinearLayout>

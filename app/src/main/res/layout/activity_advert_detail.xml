@@ -12,44 +12,44 @@
         <TextView android:id="@+id/textType"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Type: "
+            android:text="@string/Type"
             android:textSize="16sp"
             android:paddingBottom="8dp" />
 
         <TextView android:id="@+id/textName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Name: "
+            android:text="@string/Name"
             android:paddingBottom="8dp" />
 
         <TextView android:id="@+id/textPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Phone: "
+            android:text="@string/Phone"
             android:paddingBottom="8dp" />
 
         <TextView android:id="@+id/textDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Description: "
+            android:text="@string/Description"
             android:paddingBottom="8dp" />
 
         <TextView android:id="@+id/textDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Date: "
+            android:text="@string/Date"
             android:paddingBottom="8dp" />
 
         <TextView android:id="@+id/textLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Location: "
+            android:text="@string/Location"
             android:paddingBottom="16dp" />
 
         <Button
             android:id="@+id/btnRemove"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Remove" />
+            android:text="@string/Remove" />
     </LinearLayout>
 </ScrollView>

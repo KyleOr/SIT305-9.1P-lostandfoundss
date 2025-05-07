@@ -12,8 +12,8 @@ import java.util.List;
 
 public class AdvertAdapter extends RecyclerView.Adapter<AdvertAdapter.AdvertViewHolder> {
 
-    private List<AdvertModel> advertList;
-    private OnItemClickListener listener;
+    private final List<AdvertModel> advertList;
+    private final OnItemClickListener listener;
 
     public interface OnItemClickListener {
         void onItemClick(AdvertModel advert);
@@ -34,7 +34,9 @@ public class AdvertAdapter extends RecyclerView.Adapter<AdvertAdapter.AdvertView
     @Override
     public void onBindViewHolder(@NonNull AdvertViewHolder holder, int position) {
         AdvertModel advert = advertList.get(position);
-        holder.textTitle.setText(advert.getType() + " - " + advert.getName());
+        holder.textTitle.setText(
+                holder.itemView.getContext().getString(R.string.advert_title, advert.getType(), advert.getName())
+        );
 
         holder.itemView.setOnClickListener(v -> listener.onItemClick(advert));
     }

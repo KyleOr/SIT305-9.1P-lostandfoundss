@@ -3,13 +3,13 @@ package com.example.lostandfound;
 import java.io.Serializable;
 
 public class AdvertModel implements Serializable {
-    private int id;
-    private String type;
-    private String name;
-    private String phone;
-    private String description;
-    private String date;
-    private String location;
+    private final int id;
+    private final String type;
+    private final String name;
+    private final String phone;
+    private final String description;
+    private final String date;
+    private final String location;
 
     public AdvertModel(int id, String type, String name, String phone, String description, String date, String location) {
         this.id = id;

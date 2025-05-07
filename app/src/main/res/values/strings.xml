@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">lostandfound</string>
+    <string name="Type">Type:</string>
+    <string name="Name">Name:</string>
+    <string name="Phone">Phone:</string>
+    <string name="Description">Description:</string>
+    <string name="Date">Date:</string>
+    <string name="Location">Location:</string>
+    <string name="Remove">Remove</string>
+    <string name="Post_type">Post type:</string>
+    <string name="Lost">Lost</string>
+    <string name="Found">Found</string>
+    <string name="Name_hint">Name</string>
+    <string name="Phone_hint">Phone</string>
+    <string name="Description_hint">Description</string>
+    <string name="Date_hint">Date</string>
+    <string name="Location_hint">Location</string>
+    <string name="Save_button">Save</string>
+    <string name="Create_advert">Create a new advert</string>
+    <string name="Show_lost_and_found_button">Show all Lost and Found items</string>
+    <string name="Show_lost_and_found">Show Lost and Found</string>
+
+    <string name="advert_type">Type: %1$s</string>
+    <string name="advert_name">Name: %1$s</string>
+    <string name="advert_phone">Phone: %1$s</string>
+    <string name="advert_description">Description: %1$s</string>
+    <string name="advert_date">Date: %1$s</string>
+    <string name="advert_location">Location: %1$s</string>
+    <string name="advert_removed">Advert removed</string>
+    <string name="advert_remove_failed">Failed to remove advert</string>
+
+    <string name="advert_title">%1$s - %2$s</string>
 </resources>
