@@ -71,7 +71,7 @@ public class CreateAdvertActivity extends AppCompatActivity {
         inputDate = findViewById(R.id.inputDate);
         inputLocation = findViewById(R.id.inputLocation);
         btnSave = findViewById(R.id.btnSave);
-        btnGetCurrentLocation = findViewById(R.id.btnGetCurrentLocation); // New button in XML
+        btnGetCurrentLocation = findViewById(R.id.btnGetCurrentLocation);
 
         dbHelper = new DatabaseHelper(this);
 

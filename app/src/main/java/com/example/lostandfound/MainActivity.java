@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         );
 
         btnShowOnMap.setOnClickListener(v ->
-                startActivity(new Intent(MainActivity.this, MapActivity.class)) // new activity
+                startActivity(new Intent(MainActivity.this, MapActivity.class))
         );
     }
 }
