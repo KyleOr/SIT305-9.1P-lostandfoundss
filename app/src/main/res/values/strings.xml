@@ -30,4 +30,8 @@
     <string name="advert_remove_failed">Failed to remove advert</string>
 
     <string name="advert_title">%1$s - %2$s</string>
+
+    <string name="current_location">Get Current Location</string>
+    <string name="show_map">Show on Map</string>
+
 </resources>

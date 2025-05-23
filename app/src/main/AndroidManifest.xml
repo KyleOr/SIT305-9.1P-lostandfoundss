@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Required permissions for Google Maps / Places -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +17,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lostandfound"
         tools:targetApi="31">
+
+        <!-- Google Maps / Places API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAgD48zUmujHxrX7wyFqGmWgY9OMwHJn0U" />
 
         <!-- Main Launcher -->
         <activity
@@ -27,6 +37,8 @@
         <activity android:name=".CreateAdvertActivity" />
         <activity android:name=".ShowItemsActivity" />
         <activity android:name=".AdvertDetailActivity" />
+        <activity android:name=".MapActivity" />
+
 
     </application>
 

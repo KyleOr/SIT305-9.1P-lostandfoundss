@@ -20,4 +20,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/Show_lost_and_found_button" />
+
+    <Button
+        android:id="@+id/btnShowOnMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show_map"
+        android:layout_marginTop="16dp" />
+
 </LinearLayout>

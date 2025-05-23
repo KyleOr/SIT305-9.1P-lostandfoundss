@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     Button btnCreateAdvert, btnShowAllItems;
+    Button btnShowOnMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,21 +19,18 @@ public class MainActivity extends AppCompatActivity {
 
         btnCreateAdvert = findViewById(R.id.btnCreateAdvert);
         btnShowAllItems = findViewById(R.id.btnShowAllItems);
+        btnShowOnMap = findViewById(R.id.btnShowOnMap); // new button
 
-        btnCreateAdvert.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, CreateAdvertActivity.class));
-            }
-        });
+        btnCreateAdvert.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, CreateAdvertActivity.class))
+        );
 
+        btnShowAllItems.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, ShowItemsActivity.class))
+        );
 
-        btnShowAllItems.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ShowItemsActivity.class));
-            }
-        });
-
+        btnShowOnMap.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, MapActivity.class)) // new activity
+        );
     }
 }
